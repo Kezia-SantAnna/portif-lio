@@ -42,6 +42,19 @@ p {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.social-item > img:active {
+  transform: scale(90%);
+}
+
+.social-item > img:hover {
+  background:  white;
+  border-radius: 40%;
+}
+
+.social-item:hover {
+  cursor: pointer;
+}
+
 .social-item > img {
   margin: 8px;
   width: 15%;
