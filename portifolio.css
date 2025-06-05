@@ -1,16 +1,23 @@
-body {
+body,
+html {
   background-color: #e7dfd8;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 12px;
-  margin: 36px 12vw;
+  margin-block: 32px;
+  width: 100%;
 }
 
 nav > a {
-  font-size: 24px;
+  margin: auto;
+  font-size: 20px;
 }
 
 nav > a:hover {
@@ -20,14 +27,9 @@ nav > a:hover {
 
 h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 70px;
+  font-size: 60px;
   color: black;
   margin-bottom: 0;
-}
-
-figure {
-  /* margin: 0; */
-  width: 30%;
 }
 
 img {
@@ -42,22 +44,68 @@ p {
 
 .social-item > img {
   margin: 8px;
-  width: 5%;
+  width: 15%;
 }
 
 .about-me {
   display: grid;
-  width: 65%;
+  width: 60%;
 }
 
 .social-box {
-  align-self: flex-end;
+  width: 80%;
 }
 
 .container-box {
   border: solid 4px black;
-  padding: 16px;
-  margin-inline: 8vw;
+  padding: 24px;
+  width: 80%;
+  margin: auto;
+  margin-top: 8px;
   display: flex;
   justify-content: space-between;
+  gap: 16px;
+}
+
+.image-profile {
+  width: 30%;
+}
+
+.image-profile > img {
+  box-shadow:  2px 3px 8px rgb(65, 63, 63);
+}
+
+.main-div {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav > a {
+    margin:0;
+  font-size: 16px;
+}
+nav {
+  justify-content: space-around;
+}
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 16px;
+}
+
+.container-box {
+  padding: 12px;
+  gap: 12px;
+}
+.about-me {
+  width: 55%;
+}
+
+.image-profile {
+  width: 40%;
+}
+
 }
